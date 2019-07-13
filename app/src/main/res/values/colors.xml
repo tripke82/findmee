@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00aeef</color>
+    <color name="colorPrimaryDark">#00aeef</color>
+    <color name="colorAccent">#024e60</color>
+    <color name="WhiteBackground">#ffffff</color>
+    <color name="TitleColor">#ffffff</color>
+    <color name="defaultTextColor">#000000</color>
+    <color name="TextColorWhite">#ffffff</color>
+    <item name="SelectedButtonTextColor" type="color">#ff4181</item>
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+</resources>

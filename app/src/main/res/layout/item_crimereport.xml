@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageViewProfile"
+        android:src="@drawable/default_profile"
+        style="@style/imageViewProfile"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageViewProfile">
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            style="@style/textViewMainFeed"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/button_vertical_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateTime"
+            style="@style/textViewMainFeed"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btnShowOptions"
+            style="@style/imageViewTop"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/button_vertical_margin"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_show_options"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textviewCrimeComments"
+        style="@style/textViewMainFeed"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_toEndOf="@id/imageViewProfile"/>
+
+    <ImageView
+        android:id="@+id/imageviewCrime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmergencyText"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        style="@style/linearLayoutHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_alignStart="@+id/textviewCrimeComments"
+        android:layout_below="@+id/relativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all 3 comments"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="9sp"
+            android:layout_below="@+id/image_caption"
+            android:id="@+id/usercommentslink"
+            android:layout_marginTop="15dp"/>
+
+        <!--
+        <ImageView
+            android:id="@+id/imageViewLike"
+            style="@style/imageViewBottom"
+            android:src="@drawable/thumbup64x64"/>
+
+        <TextView
+            android:id="@+id/textViewLike"
+            style="@style/textViewBottom"/>
+
+        <ImageView
+            android:id="@+id/imageViewDislike"
+            style="@style/imageViewBottom"
+            android:src="@drawable/thumbdown64x64"/>
+
+        <TextView
+            android:id="@+id/textViewDislike"
+            style="@style/textViewBottom"/>
+
+        <ImageView
+            android:id="@+id/imageViewShare"
+            style="@style/imageViewBottom"
+            android:src="@drawable/share64x64"/>
+
+        <TextView
+            android:id="@+id/textViewShare"
+            style="@style/textViewBottom"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/imageViewBottom"
+            android:background="@drawable/cancelbutton64x64" />-->
+    </LinearLayout>
+</RelativeLayout>

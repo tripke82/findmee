@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Mainfeed.MainfeedFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <!--
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/profile_photo"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_profile"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"/> -->
+
+
+            <Button
+                android:id="@+id/btn_Post"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/plusicon64x64" />
+
+            <SearchView
+                android:id="@+id/mainfeed_searchview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="20dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/default_profile" />
+
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/mainfeed_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:scrollbars="none"
+            android:textColor="@color/defaultTextColor"
+            android:transcriptMode="normal" />
+
+    </LinearLayout>
+
+    <!--
+    <com.eschao.android.widget.elasticlistview.ElasticListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="446dp"
+        android:layout_below="@id/relLayout1"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none" />-->
+
+</FrameLayout>

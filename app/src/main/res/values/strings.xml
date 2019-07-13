@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Findmee</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_in_retype_password">Password(s) are not the same.</string>
+    <string name="error_invalid_mobile">This mobile number is invalid</string>
+    <string name="error_already_connected">You have already connected to this user.</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="facebook_login_canceled">Facebook Login Canceled</string>
+    <string name="facebook_login_error">Facebook Login error:"</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="reg_failed">Registeration failed, please check your email and password and try again</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_mainfeed">News feed</string>
+    <string name="title_crimemap">Crime Map</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_emergency_requests">Emergency Requests</string>
+    <string name="title_emergency_request">Emergency Request</string>
+    <string name="title_friend_request">Friend Request</string>
+
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="friend_request_message"> sent you a friend request. Are you sure you want to accept it?</string>
+    <string name="No_friend_request"> There is no friend request. </string>
+    <string name="friend_request_sent">Friend Request Sent</string>
+    <string name="friend_request_accept">Are you sure you want to accept the friend request?</string>
+    <string name="friend_request_accepted">Friend request has been accepted</string>
+    <string name="friend_already_requested">You have already sent a friend request to this user.</string>
+    <string name="Number_Of_friends_exceeded">You have exceeded the maximum number of friends</string>
+    <string name="Other_user_friends_exceeded">This user has exceeded the maximum number of friends</string>
+    <string name="friendrequest_success">"Friend request has been accepted. Now you can send emergency alert to your designated contact</string>
+    <string name="mobile_number_not_found">"The mobile number doesn't exist in our system. Please try again."</string>
+    <string name="emergency_contact_delete">Are you sure you want to delete the emergency contact?</string>
+    <string name="emergency_contact_deleted">The emergency contact has been deleted</string>
+    <string name="item_delete">Are you sure you want to delete it?</string>
+    <string name="sent_you_an_emergency_request"> sent you an Emergency Request on </string>
+    <string name="emergency_message_sent">An Emergency Message is Sent</string>
+
+    <string name="emergency_SMS_part_1">Findmee App - !!</string>
+    <string name="emergency_SMS_part_2">Emergency Call - !!</string>
+    <string name="emergency_SMS_part_3"> I am in danger and my location is </string>
+    <string name="emergency_SMS_part_4"> Please contact the police, give them my name, description and location. </string>
+
+    <string name="user_not_joined_msg">This user has not joined the network. A message has been sent to download our mobile app.</string>
+    <string name="SMS_invitation">
+       please download the emergency app - Findmee. In emergency situations we can
+        send SOS signals to each other. I already put you as an emergency contact.
+        Findmee ကို Download လုပ္လိုက္ပါ  သင့္မွာအေရးအေျခအေနျဖစ္ေပၚလာပါက  Emergency ခလုတ္ႏွိပ္လိုက္ရံုျဖင့္  လ်ွင္ျမန္စြြာဆက္သြြယ္ႏိုင္ေသာ Application တစ္ခုျဖစ္ပါသည္။ http://bit.ly/Findmee
+    </string>
+
+    <string name="captured_photo_sent">The Captured Photo is Sent</string>
+    <string name="no_emergency_request">There is no emergency request</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="enter_your_password_to_continue">Please enter your password to continue this action</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_updated">Email address is updated. Please sign in with new email id!</string>
+    <string name="name_updated"> Display Name is updated.</string>
+    <string name="mobile_updated"> Mobile number is updated.</string>
+    <string name="password_updated">Password is updated, sign in with new password!</string>
+    <string name="email_update_failed">Failed to update email!</string>
+    <string name="password_update_failed">Failed to update password!</string>
+    <string name="reset_password_email_sent">Reset password email is sent!</string>
+    <string name="failed_reset_password_email">Failed to send reset email!</string>
+    <string name="password_too_short">Password too short, enter minimum 6 characters!</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_name">Change Name</string>
+    <string name="change_mobile">Change Mobile</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="delete_account_confirmation_question">Are you sure you want to delete your account?</string>
+    <string name="delete_account_confirmation_message">Your account has been deleted:(</string>
+    <string name="failed_to_delete_account">Failed to delete your account!</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_reset_password">Reset Password</string>
+    <string name="hint_displayname">Display Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_retype_password">Retype Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_enter_passcode">Enter Passcode</string>
+    <string name="hint_Store_Mobile">Store Mobile (default:09964573332)"</string>
+    <string name="hint_make_crime_report">Tell us what happened!</string>
+    <string name="select_datetime">Select date time</string>
+
+    <string name="btn_login">Login</string>
+    <string name="btn_Register">Register</string>
+    <string name="btn_link_to_register">Not a member? Get registered!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_post">Post</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_select_image">Select Image</string>
+    <string name="btn_remove_image">Remove Image</string>
+    <string name="btn_view_image">View Image</string>
+    <string name="btn_save_image">Save Image</string>
+    <string name="btn_EditAccount">Edit Account</string>
+    <string name="btn_Edit">Edit</string>
+    <string name="btn_AddFriend">Add Friend</string>
+    <string name="btn_Sent">Sent</string>
+    <string name="btn_Added">Added</string>
+    <string name="btn_Delete">Delete</string>
+    <string name="btn_ActivateAccount">Activate Account</string>
+    <string name="btn_setup_emergency_contact">Set Up Emergency Contact</string>
+    <string name="btn_request_friend">Request Friend</string>
+    <string name="btn_facebook_login">Login with Facebook      </string>
+    <string name="btn_request_emergency">EMERGENCY</string>
+    <string name="btn_physical_abuse">Phyiscal</string>
+    <string name="btn_verbal_abuse">Verbal</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+
+    <string name="label_name">Name :</string>
+    <string name="label_email">Email :</string>
+    <string name="label_emergency_contact">Emergency Contact</string>
+    <string name="label_show_your_name">Show your name  </string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="lbl_activate_account">Activate your account</string>
+    <string name="lbl_accept_handshake">Accept Hand Shake Request</string>
+    <string name="lbl_report_a_crime">Report A Crime</string>
+    <string name="lbl_Other">Other</string>
+    <string name="lbl_See_it_Say_it">See it, say it</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">991903560982174</string>
+    <string name="fb_login_protocol_scheme">fb991903560982174</string>
+
+</resources>

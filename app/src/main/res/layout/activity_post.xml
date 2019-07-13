@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainfeed.PostActivity">
+
+    <LinearLayout
+        android:id="@+id/activitypostlinelayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!--
+     <ProgressBar
+         android:id="@+id/progressBar"
+         style="@android:style/Widget.ProgressBar.Horizontal"
+         android:layout_centerInParent="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:max="100"
+         android:progress="10"
+         android:progressDrawable="@drawable/progress_drawable" />
+
+     <ProgressBar
+         android:id="@+id/progressBar"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:indeterminateOnly="true"
+         android:indeterminateDrawable="@android:drawable/progress_horizontal"
+         android:indeterminateDuration="10"
+         android:indeterminateBehavior="repeat"
+         android:progressBackgroundTint="#208afa"
+         android:progressBackgroundTintMode="multiply"
+         android:layout_gravity="center|bottom"
+         android:layout_marginBottom="20dp"
+         android:visibility="gone"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="49dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/button_horizontal_margin"
+                android:layout_marginEnd="@dimen/button_horizontal_margin"
+                android:layout_marginLeft="@dimen/button_horizontal_margin"
+                android:layout_marginRight="@dimen/button_horizontal_margin"
+                android:layout_marginStart="@dimen/button_horizontal_margin"
+                android:layout_marginTop="@dimen/button_horizontal_margin"
+                android:background="@drawable/cancelbutton64x64" />
+
+            <Button
+                android:id="@+id/btnPost"
+                style="@style/defaultButtonStyle"
+                android:layout_width="126dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:text="Post"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/default_profile" />
+
+            <EditText
+                android:id="@+id/editTextPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="What's happening"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_vertical_margin"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

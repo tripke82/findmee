@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "683248123619",
+    "firebase_url": "https://familytracker-3748c.firebaseio.com",
+    "project_id": "familytracker-3748c",
+    "storage_bucket": "familytracker-3748c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683248123619:android:605e477b5f825da9",
+        "android_client_info": {
+          "package_name": "com.tripmee.findmee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683248123619-c73mrq7cuvijk56cqu8rcqjgsgpc4op4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tripmee.findmee",
+            "certificate_hash": "7e86a042aa2be16dd309de33a887f5a5d988861a"
+          }
+        },
+        {
+          "client_id": "683248123619-3bahdjq104grp4m9o56f17cj0ii5ka37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYmlf29r7WPeSrSEn2rltOGah8_rkgtGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683248123619-3bahdjq104grp4m9o56f17cj0ii5ka37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

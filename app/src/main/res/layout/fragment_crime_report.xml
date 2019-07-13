@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrimeReport.CrimeReportFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_vertical_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/btn_cancel"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_vertical_margin"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="72dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Report"
+                android:textColor="@color/defaultTextColor"/>
+
+            <TextView
+                android:id="@+id/textviewPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_vertical_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:text="@string/btn_post"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/displayNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_vertical_margin"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textPersonName" />
+
+            <Switch
+                android:id="@+id/switchShowHideName"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/button_vertical_margin"
+                android:layout_marginEnd="@dimen/button_vertical_margin"
+                android:layout_marginLeft="@dimen/button_vertical_margin"
+                android:layout_marginRight="@dimen/button_vertical_margin"
+                android:layout_marginStart="@dimen/button_vertical_margin"
+                android:layout_marginTop="@dimen/button_vertical_margin"
+                android:text="@string/label_show_your_name" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/hint_make_crime_report"
+            android:inputType="textMultiLine" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/button_vertical_margin"
+            android:background="@android:color/transparent"
+            android:textSize="12dp"
+            android:hint="Enter Address, City or Zip Code"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/reportMapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:context="com.tripmee.findmee.CrimeReport.CrimeReportFragment" />
+            <LinearLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!--
+                <TextView
+                    android:id="@+id/locationMarkertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:text=" Set the Location "
+                    android:textColor="@color/defaultTextColor" />-->
+
+                <ImageView
+                    android:id="@+id/imageMarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_marker" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/selectImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_imageicon" />
+
+            <ImageButton
+                android:id="@+id/btnClearImage"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/selectImageView"
+                android:layout_alignTop="@id/selectImageView"
+                android:src="@drawable/ic_clear" />
+
+            <TextView
+                android:id="@+id/selectDateEditText"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:layout_toStartOf="@+id/selectTimeEditText"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_transparent_button"
+                android:textColor="@color/defaultTextColor"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:hint="@string/select_datetime" />
+            <TextView
+                android:id="@+id/selectTimeEditText"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:background="@drawable/rounded_transparent_button"
+                android:textColor="@color/defaultTextColor"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:hint="@string/select_datetime" />
+            <!--
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/verbalabusereportbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/button_vertical_margin"
+                android:layout_marginEnd="55dp"
+                android:layout_marginTop="@dimen/button_vertical_margin"
+                android:clickable="true"
+                android:src="@drawable/verbalabuseicon64x64"
+                app:fabSize="mini" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/sexualassaultreportbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/button_vertical_margin"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="@dimen/button_vertical_margin"
+                android:clickable="true"
+                android:src="@drawable/sexualassaulticon64x64"
+                app:fabSize="mini" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

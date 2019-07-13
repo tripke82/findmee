@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurbg"
+    tools:context=".CrimeReport.CrimeTypeFragment">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnVerbalAbuse"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/verbalabuse200x200"
+                    app:maxImageSize="50dp"
+                    app:fabCustomSize="52dp" />
+                <TextView
+                    android:id="@+id/verbalabusetextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="18dp"
+                    android:text="@string/btn_verbal_abuse"
+                    android:textColor="@color/TextColorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnSexualAssualt"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/physicalabuse200x200"
+                    app:maxImageSize="50dp"
+                    app:fabCustomSize="60dp" />
+                <TextView
+                    android:id="@+id/physicalabusetextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="18dp"
+                    android:text="@string/btn_physical_abuse"
+                    android:textColor="@color/TextColorWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnOther"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eye_icon200x200"
+                    app:fabCustomSize="60dp"
+                    app:maxImageSize="50dp" />
+                <TextView
+                    android:id="@+id/othertextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_vertical_margin"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="18dp"
+                    android:text="@string/lbl_See_it_Say_it"
+                    android:textColor="@color/TextColorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--
+         <android.support.design.widget.FloatingActionButton
+             android:id="@+id/verbalabusereportbtn"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginBottom="@dimen/button_vertical_margin"
+             android:layout_marginEnd="55dp"
+             android:layout_marginTop="@dimen/button_vertical_margin"
+             android:clickable="true"
+             android:src="@drawable/verbalabuseicon64x64"
+             app:fabSize="mini" />
+
+         <android.support.design.widget.FloatingActionButton
+             android:id="@+id/sexualassaultreportbtn"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginBottom="@dimen/button_vertical_margin"
+             android:layout_marginEnd="12dp"
+             android:layout_marginTop="@dimen/button_vertical_margin"
+             android:clickable="true"
+             android:src="@drawable/sexualassaulticon64x64"
+             app:fabSize="mini" />-->
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSexualAssualt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:background="@drawable/rect_transparent_button"
+                android:drawableTop="@drawable/sexualassaulticon64x64"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/btn_physical_abuse"
+                android:textColor="@color/TextColorWhite" />
+
+            <Button
+                android:id="@+id/btnVerbalAbuse"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:background="@drawable/rect_transparent_button"
+                android:drawableTop="@drawable/verbalabuseicon64x64"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/btn_verbal_abuse"
+                android:textColor="@color/TextColorWhite" />
+        </LinearLayout>-->
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_listitem"
+            android:src="@drawable/default_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_listitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/defaultTextColor"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/mobile_listitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/defaultTextColor"
+                android:text="Mobile"
+                android:textStyle="bold"
+                android:textSize="12dip" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnDeleteContact"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_delete"
+            android:gravity="center"
+            android:paddingRight="4dp"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

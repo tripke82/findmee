@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrimeReport.CrimeMapFragment">
+
+    <LinearLayout
+        android:id="@+id/crimeMaplinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_horizontal_margin"
+        android:paddingRight="@dimen/default_horizontal_margin"
+        android:paddingBottom="@dimen/default_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_height="45dp"
+                android:layout_width="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_vertical_margin"
+                android:src="@drawable/default_profile" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="60dp"
+                android:textAllCaps="true"
+                android:text="@string/lbl_report_a_crime" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/reportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:clickable="true"
+                android:src="@drawable/writebutton64x64"
+                app:fabSize="mini" />
+
+            <TextView
+                android:id="@+id/textViewReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="@dimen/button_horizontal_margin"
+                android:layout_centerHorizontal="true"
+                android:text="@string/lbl_report_a_crime" />
+
+        </RelativeLayout>
+
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/crimeMapView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:backgroundTintMode="multiply"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/filterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:clickable="true"
+                android:src="@drawable/filterwhitecolor64x64"
+                app:fabSize="mini" />-->
+
+            <!--
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="60dp"
+                android:textAllCaps="true"
+                android:text="@string/lbl_report_a_crime" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/reportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:clickable="true"
+                android:src="@drawable/writebutton64x64"
+                app:fabSize="mini" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

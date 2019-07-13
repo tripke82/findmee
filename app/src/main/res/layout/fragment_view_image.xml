@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".EmergencyRequests.ViewImageFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/button_vertical_margin">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_eitem"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="@dimen/button_vertical_margin"
+                android:layout_marginEnd="@dimen/button_horizontal_margin"
+                android:layout_marginLeft="@dimen/button_horizontal_margin"
+                android:layout_marginRight="@dimen/button_horizontal_margin"
+                android:layout_marginStart="@dimen/button_horizontal_margin"
+                android:layout_marginTop="@dimen/button_vertical_margin"
+                android:src="@drawable/default_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/emergencyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:text="Name"
+                    android:textColor="@color/defaultTextColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/emergencyMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:text="Mobile"
+                    android:textColor="@color/defaultTextColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+         <ImageView
+            android:id="@+id/imageViewEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_vertical_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/defaultButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:text="@string/btn_back"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveImage"
+                style="@style/defaultButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/button_horizontal_margin"
+                android:text="@string/btn_save_image"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+     </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
